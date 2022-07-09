@@ -1,0 +1,75 @@
+* {
+    background-color: ivory;
+    padding: 5px;
+    margin: 5px;
+}
+.redborder {
+     border: 2px solid red;
+     border-collapse: collapse;
+}
+nav {
+    display: flex;
+    list-style-type:none;
+    flex-direction: row;
+    justify-content:space-around;
+    border: 1px solid red;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+a {
+    text-decoration: none;
+}
+
+  /* visited link */
+a:visited {
+    color: green;
+}
+  
+  /* mouse over link */
+a:hover {
+    color: red;
+}
+  
+  /* selected link */
+a:active {
+    color: yellow;
+} 
+h1 {
+    text-transform: uppercase;
+}
+/* apply color all list items present in ol with id firstol */
+ol#firstol>li {
+    color:fuchsia
+}
+/* Attribute Selector */
+ol[type="A"] {
+    color:yellowgreen;
+}
+ol[type="I"]>li#firstli {
+    color:red;
+}
+/*sibling after li with id firstli */
+li#firstli+li {
+    color: rgb(100,100,100);
+}
+
+/*all sibling's after li with id one */
+li#one ~ li {
+    color: #995544;
+}
+pre {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+table.center {
+    margin-left:auto; 
+    margin-right:auto;
+}
+img {
+    display: block;
+    margin-left: auto;
+}
